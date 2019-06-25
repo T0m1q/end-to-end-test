@@ -14,7 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:open": "percy exec -- cypress open",
-    "cypress:run": "percy exec -- cypress run"
+    "cypress:run": "percy exec -- cypress run --record --key 929553d7-a967-4721-8cf1-552adad6c0db"
   },
   "eslintConfig": {
     "extends": "react-app"
