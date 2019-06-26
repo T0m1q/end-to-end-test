@@ -8,6 +8,9 @@ addons:
       # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
       - libgconf-2-4
 
+before_script:
+- sudo ln -s $(which node) /usr/bin/node
+
 script:
   - npm test --no-cache
   - npm start & wait-on http://localhost:3000
