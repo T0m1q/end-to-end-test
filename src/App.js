@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import arrGenerator from './arrGenerator'
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         </a>
       </header>
       <div className="App-container">
-          {[1,2,3,4,5,6,7,8,9,10].map((item, key) => {
-            return <div className="App-card">Card {item + 1}</div>
+          {arrGenerator(1000).map((item) => {
+            return <div key={item} className="App-card">Card {item}</div>
           })}
       </div>
       
