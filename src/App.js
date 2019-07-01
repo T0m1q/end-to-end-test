@@ -23,7 +23,7 @@ function App() {
       </header>
       <div className="App-container">
           {[1,2,3,4,5,6,7,8,9,10].map((item, key) => {
-            return <div className="App-card">Card {item}</div>
+            return <div className="App-card">Card {item + 1}</div>
           })}
       </div>
       
