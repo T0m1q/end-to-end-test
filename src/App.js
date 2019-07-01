@@ -20,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <img src='https://via.placeholder.com/150x1000' alt="placeholder" />
     </div>
   );
 }
