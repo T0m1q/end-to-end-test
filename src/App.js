@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,12 @@ function App() {
           Learn React
         </a>
       </header>
-      <img src='https://via.placeholder.com/150x1000' alt="placeholder" />
+      <div className="App-container">
+          {[1,2,3,4,5,6,7,8,9,10].map((item, key) => {
+            return <div className="App-card">Card {item}</div>
+          })}
+      </div>
+      
     </div>
   );
 }
