@@ -21,12 +21,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <div className="App-container">
-          {arrGenerator(1000).map((item) => {
-            return <div key={item} className="App-card">Card {item}</div>
-          })}
-      </div>
-      
     </div>
   );
 }
